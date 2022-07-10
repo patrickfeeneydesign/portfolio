@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 40px;
+    margin-top: 0;
+    margin-left: 3vw;
+}
+/* OUR LOVELY PARENT DIVS FOR STYLING NEXT DOOR */
+.big {
+    display: flex;
+}
+.section {
+    position: inline-block;
+}
+/* OUR LOVELY NAVIGATION ELEMENT */
+nav {
+    border: 1px solid black;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    width: 15vw;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1vw;
+}
+span {
+    color: #157f2a;;
+}
+/* STLING THE HOVER weve made a little tab on the right hand side*/
+nav ul li:hover {
+    background-color: #157f2a;
+    color: white;
+    border-bottom-right-radius: 1.5vw;
+    border-top-right-radius: 1.5vw;
+    transform: scaleX(1.08);
+    transform-origin: left;
+}
+nav ul li:hover a {
+    font-style: italic;
+    color: white;
+}
+nav ul li:hover span {
+    color: black
+}
+nav ul li a {
+    font-family: space-mono, monospace;
+    font-size: calc(1.5vw + 4pt);
+    line-height: 1.3vw;
+}
+nav ul li a:link {
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:visited {
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: white;
+}
+nav ul li:hover a {
+    color: white;
+}
+/*HOME BUTTON */
+.toprighticon {
+    width: 17vw;
+    height: fit-content;
+    border: 2px solid black;
+    border-bottom: none;
+}
+.toprighticon p {
+    color: #157f2a;;
+    font-family: space-mono, monospace;
+    font-weight: 100;
+    font-size: 7vw;
+    margin-top: -2.5vw;
+    margin-bottom: -2.5vw;
+}
+/* HEADERS */
+.box {
+    margin-top: -5.6vw;
+    position: fixed;
+    border: 2px solid black;
+    background-color:#157f2a;;
+    height: 5.37vw;
+    width: 76vw;
+}
+.box2 {
+    margin-top: 5.6vw;
+    border: 2px solid black;
+    height: 2.5vw;
+    width: 76vw;
+    border-top: none;
+}
+.box h1 {
+    font-family: space-mono, monospace;
+    font-weight: 300;
+    font-size: 4.8vw;
+    margin-top: -1vw;
+    margin-left: 1vw;
+    white-space: nowrap;
+    color: white;
+}
+.box2 h3 {
+    font-family: space-mono, monospace;
+    font-weight: 300;
+    font-size: 1.25vw;
+    margin-left: 1vw;
+    padding-top: 0.4vw;
+    white-space: nowrap;
+    color:black;
+} 
+/* CONTENT OF PAGE */
+article {
+    z-index: -5;
+    width: 76vw;
+    max-height: 150vw;
+    position: absolute;
+    border: 1.5px solid black;
+    border-top: none;
+    background-color: white;
+    height: 1000px; /* HEIGHT OF OUR MAIN PAGE */
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    background-size: 3.5vw 3.5vw; 
+    /* THIS IS OUR GRID___ REMEMBER GRADIENTS PREVENET OHVER ANIMATIONS */
+  background-image:
+    linear-gradient(to right, rgb(0, 0, 0) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(0, 0, 0) 1px, transparent 1px);
+}
+/* Title element */
+.contentheader {
+    background-color: #157f2a;;
+    border: 2px solid black;
+    margin: 4vw;
+    margin-bottom: 2vw;
+    width: 63vw;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+    padding: 3vw;
+    padding-top: 1vw;
+    box-shadow: 10px 10px;
+}
+/* HEADINGS */
+.textcontainer h2 {
+    font-family: space-mono, monospace;
+    text-decoration: underline;
+    font-size: calc(2vw + 4pt);
+    color: white;
+}
+.textcontainer h3 {
+    font-family: space-mono, monospace;
+    font-weight: 300;
+    font-size: calc(1vw + 4pt);
+    color: white;
+}
+/* MAIN BODY element */
+.contentcontainer {
+    background-color: white;
+    border: 2px solid black;
+    margin: 4vw;
+    margin-top: -4vw;
+    width: 63vw;
+   /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+    padding-bottom: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0;
+    box-shadow: 10px 10px;
+}
+/* INLINE STYLING */
+.row {
+    display: flex;
+}
+.container {
+    position: inline-block;
+    padding: 1vw;
+    margin: 1vw;
+}
+/* IMAGE */
+.container img {
+    width: 20vw;
+    height: auto;
+    /* border-radius: 10px; */
+}
+/* BODY */
+.container p {
+    font-family: coolvetica, sans-serif;
+    font-size: calc(0.4vw + 10px);
+    text-align: justify;
+    font-weight: 400;
+}
+/*
+img:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    transition-duration: 1s;
+}
+*/
+
+/* BIG IMAGE */
+#bigimage img {
+    width: 30vw;
+    height: auto;
+    margin: 6vw;
+    margin-top: 20px;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border-top: 3vw solid #157f2a;;
+    box-shadow: 10px 10px;
+   }
+   /* OUr GORG GALLEry */
+   .cont {
+    margin: 4vw;
+}
+#photos {
+    /* Prevent vertical gaps */
+    line-height: 0;
+     
+    -webkit-column-count: 3;
+    -webkit-column-gap:   0;
+    -moz-column-count:    3;
+    -moz-column-gap:      0;
+    column-count:         3;
+    column-gap:           30px;
+    row-gap: 30px;  
+  }
+  
+  #photos img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 30px;
+   /* border-radius: 5px; */
+    box-shadow: 8px 8px;
+  }
+  .bottom {
+   margin-top: 1600px;
+  }
+   /* FOOT */
+   .bottom {
+    margin-top: 1200px;
+   }
