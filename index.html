@@ -3,6 +3,29 @@
     <head>
         <link href="homestyle.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/epj3mjc.css">
+          <!-- MOBILE STYLE-->
+        <style>
+            @media (max-width: 767px) {
+                /* no gallery */
+              article, .box, .box2 {
+                display: hidden;
+              }
+              /* Menu */
+              nav {
+                width: 90vw;
+                z-index: 20;
+              }
+              /* Links themselves */
+              nav ul li a {
+                font-size: 10vw;
+                line-height: 7vw;
+              }
+              /* container for links */
+              nav ul li {
+                padding: 20px;
+              }
+            }
+          </style>
     </head>
     <body>
         <!-- MENU SECTION-->
